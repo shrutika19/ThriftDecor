@@ -16,7 +16,7 @@ const About = () => {
                     className="absolute left-[-5px] top-[-30px] w-12 lg:w-[50px]"
                 />
                 <h1 className="bold-52 lg:bold-88">Transform with Thrift Decor</h1>
-                <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+                <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]  text-justify">
                     Transform your home with budget-friendly thrift decor! Explore unique pieces that bring charm and character to your space without breaking the bank.
                     From vintage treasures to upcycled finds, discover affordable ways to refresh your home and make it truly yours.
                 </p>

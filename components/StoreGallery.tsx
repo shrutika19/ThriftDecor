@@ -1,6 +1,5 @@
 import { PEOPLE_URL } from "@/constants";
 import Image from "next/image";
-import { useState } from "react"; // Import useState for component state
 
 interface CarouselProps {
     backgroundImage: string;
@@ -10,7 +9,6 @@ interface CarouselProps {
 }
 
 const CarouselSlider = ({ backgroundImage, title, username, addedInCart }: CarouselProps) => {
-    const [currentIndex, setCurrentIndex] = useState(0); // State for current image index
 
     return (
         <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
@@ -73,7 +71,7 @@ const StoreGallery = () => {
                     <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
                         Elevate Your <strong>Decor on a Budget</strong>
                     </h2>
-                    <p className="regular-14 xl:regular-16 mt-5 text-white">
+                    <p className="regular-14 xl:regular-16 mt-5 text-white  text-justify">
                         Start your journey by clicking on the photo of the item you love. Upload any necessary details and decide on a price that fits your budget.
                         Engage in bargaining with other users to get the best deal possible. And if you're looking to trade, explore exchange options available on our platform.
                         At Thrift Decor, it's a seamless process from discovery to negotiation to exchange, helping you create the perfect home decor within your budget.
