@@ -70,7 +70,7 @@ const About = () => {
                     <div className="flexBetween">
                         <div className="flex flex-col">
                             <p className="regular-16 block text-gray-20">Contact</p>
-                            <p className="bold-20 text-white">6181817288</p>
+                            <p className="bold-20 text-white">123-456-7890</p>
                         </div>
 
                     </div>

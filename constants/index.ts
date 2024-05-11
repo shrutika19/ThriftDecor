@@ -17,32 +17,32 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
     {
-        title: 'Real maps can be offline',
+        title: 'User-friendly Interface',
         icon: '/map.svg',
         variant: 'green',
         description:
-            'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+            'A clean and intuitive interface that makes it easy for users to navigate and find what they are looking for.',
     },
     {
-        title: 'Set an adventure schedule',
+        title: 'Fast Delivery ',
         icon: '/calendar.svg',
         variant: 'green',
         description:
-            "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+            "Integration with delivery services or a built-in delivery system that allows users to arrange for the delivery of purchased items directly to their doorstep.",
     },
     {
-        title: 'Technology using augment reality',
+        title: 'Secure Transactions',
         icon: '/tech.svg',
         variant: 'green',
         description:
-            'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+            'Integration with secure payment gateways to facilitate safe and reliable transactions between buyers and sellers.',
     },
     {
-        title: 'Many new locations every month',
+        title: 'Tracking and Notifications',
         icon: '/location.svg',
         variant: 'orange',
         description:
-            'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+            'Real-time tracking of delivery status and notifications to users regarding the progress of their deliveries, including estimated arrival times.',
     },
 ];
 
@@ -51,7 +51,7 @@ export const FOOTER_LINKS = [
     {
         title: 'Learn More',
         links: [
-            'About Hilink',
+            'About Thrift Decor',
             'Press Releases',
             'Environment',
             'Jobs',

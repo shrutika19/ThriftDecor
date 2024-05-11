@@ -51,7 +51,7 @@ const Guide = () => {
                             <div className='flexBetween w-full'>
                                 <p className='regular- text-gray-20'>Contact </p>
                             </div>
-                            <p className='bold-20'>89270086</p>
+                            <p className='bold-20'>123-456-7890</p>
                         </div>
                     </div>
                 </div>
