@@ -5,7 +5,7 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
-import { signIn, useSession } from "next-auth/react"
+import { signIn, signOut, useSession } from "next-auth/react"
 import React from "react"
 
 const Navbar = () => {
@@ -31,9 +31,16 @@ const Navbar = () => {
                 <>
                     {session ? (
                         <>
-                            <h1 className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+                            <h1 className="regular-16 text-gray-90  flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold mr-4">
                                 {session.user?.name}
                             </h1>
+                            <Button
+                                type="button"
+                                title="Sign out"
+                                icon='/user.svg'
+                                variant="btn_dark_green"
+                                onClick={() => signOut()} // Pass the sign-in function here
+                            />
                         </>
                     ) : <>
                         <Button
