@@ -1,9 +1,16 @@
+"use client"
+
+
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
+import { signIn, useSession } from "next-auth/react"
+import React from "react"
 
 const Navbar = () => {
+    const { data: session } = useSession();
+
     return (
         <nav className=" flexBetween max-container padding-container relative z-30 py-5">
             <Link href='/'>
@@ -21,12 +28,29 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className="lg:flexCenter hidden">
-                <Button
+                <>
+                    {session ? (
+                        <>
+                            <h1 className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
+                                {session.user?.name}
+                            </h1>
+                        </>
+                    ) : <>
+                        <Button
+                            type="button"
+                            title="Sign in with GitHub"
+                            icon='/user.svg'
+                            variant="btn_dark_green"
+                            onClick={() => signIn("github")} // Pass the sign-in function here
+                        />
+                    </>}
+                </>
+                {/* <Button
                     type="button"
                     title="Login"
                     icon='/user.svg'
                     variant="btn_dark_green"
-                />
+                /> */}
             </div>
             <Image
                 src='/menu.svg'
